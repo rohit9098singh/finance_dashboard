@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { useApp } from "@/context/app-context";
 import TransactionTable from "@/components/custom/TransactionTable/TransactionTable";
 import TransactionFormModal from "@/components/custom/TransactionFormModal/TransactionFormModal";
-import RoleSwitcher from "@/components/custom/RoleSwitcher/RoleSwitcher";
 import DarkModeToggle from "@/components/custom/darkMode/DarkModeToggle";
 import { Transaction } from "@/types/finance";
 import { Download, FileJson } from "lucide-react";
@@ -89,7 +88,6 @@ const Transactions: React.FC = () => {
 
             {/* Controls */}
             <div className="flex items-center gap-3">
-              <RoleSwitcher />
               <DarkModeToggle />
             </div>
           </div>
